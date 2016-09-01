@@ -1,0 +1,31 @@
+i<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ac</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet"> 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body   >
+<div id="gradient">
+      <div class="container-fluid" >
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li></li>
+              <% if current_user %>
+              <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
+              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+              <% else %>
+              <li><%= link_to 'Login', new_user_session_path %></li>
+              <% end %>
+          </ul></div>
+
+       <%= yield %>
+    </div>
+</div>
+  </body>
+</html>
+
