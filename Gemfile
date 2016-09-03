@@ -40,7 +40,7 @@ gem 'carrierwave'
 gem 'bootstrap_form'
 gem 'ffaker'
 gem 'rails_emoji_picker'
-
+gem 'rails_12factor', group: :production
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
