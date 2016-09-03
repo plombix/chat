@@ -65,7 +65,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: Chat_production
-  username: Chat
-  password: <%= ENV['CHAT_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: chore_app_production
+  pool: 5
+  timeout: 5000
