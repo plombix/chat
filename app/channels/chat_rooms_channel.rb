@@ -1,10 +1,16 @@
 class ChatRoomsChannel < ApplicationCable::Channel
   def subscribed
     stream_from "chat_rooms_#{params['chat_room_id']}_channel"
+    chat = ChatRoom.find(params['chat_room_id'])
+    chat.count +=1
+    chat.save
   end
 
   def unsubscribed
     # Any cleanup needed when channel is unsubscribed
+    chat = ChatRoom.find(params['chat_room_id'])
+    chat.count -=1
+    chat.save
   end
 
   def send_message(data)
