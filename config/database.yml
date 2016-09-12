@@ -66,6 +66,8 @@ test:
 #
 production:
   adapter: postgresql
-  database: chore_app_production
+  username: deploy
+  password: deploy_password
+  database: deploy_production
   pool: 5
   timeout: 5000
