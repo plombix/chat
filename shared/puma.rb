@@ -11,7 +11,7 @@ stdout_redirect '/home/deploy/apps/chat/current/log/puma.error.log', '/home/depl
 
 threads 4,16
 
-bind 'unix:///home/deploy/apps/chat/shared/tmp/sockets/chat-puma.sock'
+bind 'unix:///home/deploy/apps/chat/shared/tmp/sockets/puma.sock'
 
 workers 0
 
