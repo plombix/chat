@@ -1,0 +1,13 @@
+current directory: /home/deploy/apps/chat/shared/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+/home/deploy/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20160912-18307-9997ga.rb extconf.rb
+creating Makefile
+
+current directory: /home/deploy/apps/chat/shared/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/deploy/apps/chat/shared/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/deploy/apps/chat/shared/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" install

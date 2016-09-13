@@ -1,0 +1,50 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "rails_bootstrap_forms";
+@import 'rails_emoji_picker';
+
+body{
+   font-family: 'Oswald', sans-serif;
+ }
+ h1{
+  font-weight: 90;
+  font-size: 80px;
+  font-family: 'Pacifico', cursive;
+ }
+
+#tile{
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 200px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 20px 50px 0 #8A8A8A;
+	box-shadow: 5px 20px 50px 0 #8A8A8A;
+
+}
+#tile_title{
+	 overflow: hidden;
+}
+#tile_foot{
+	margin-top: 170px;
+
+}
+#tile_sign{
+	vertical-align: middle;
+}
+
+#chat_title{
+	color:#c1b4ae;
+    text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+#message_text{
+	font-family: 'Baloo Paaji', cursive;
+}
+#message_text_type{
+	font-family: 'Baloo Paaji', cursive;
+	font-size: 35px !important;
+}

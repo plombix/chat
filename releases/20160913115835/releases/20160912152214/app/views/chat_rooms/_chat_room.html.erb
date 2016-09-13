@@ -1,0 +1,16 @@
+	<%= link_to chat_room_path(chat_room) do %>
+
+	<div class="panel col-xs-12 col-md-2" id="tile" style="background-color: #<%=chat_room.color%>">
+
+<h2 id="tile_title">
+
+	<%= "#{chat_room.title.titleize}"%>
+		
+	<div class="text-muted">
+		<%=chat_room.count%>
+	</div>
+</h2>
+	
+</div>
+
+<% end %>

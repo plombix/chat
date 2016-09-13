@@ -1,5 +1,3 @@
-Rake::Task["puma:restart"].reenable
-
 server 'localhost', port: 3000, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/plombix/chat.git'
